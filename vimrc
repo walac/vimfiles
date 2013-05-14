@@ -118,3 +118,7 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+" Trinity
+" Open and close all the three plugins on the same time 
+nmap <F8>  :TrinityToggleAll<CR>
+" End Trinity
