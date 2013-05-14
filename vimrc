@@ -7,29 +7,33 @@ set nocompatible " Be iMproved
 set number
 set wrap
 set backspace=indent,eol,start
-set tabstop=4
+" set tabstop=4
 set showcmd   " Show incomplete cmds down the bottom
 set showmode  " Show current mode down the bottom
 set incsearch " Find the next match as we type the search
 set hlsearch  " Hilight searches by default
 set magic " Set magic on, for regular expressions
 set wildmode=list:longest " Make cmdline tab completion similar to bash
-set ignorecase
+" set ignorecase
 set smartcase
 set ruler
 set history=1000
-set backup
+set nobackup
 set cursorline
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
 set autoread
 
+set sts=4
+set sw=4
+set expandtab
+
 " Enable syntax highlighting
 syntax on
 
 " No sound, no blink on errros
-set noerrorbells
+" set noerrorbells
 set novisualbell
 
 set rtp+=~/.vim/bundle/vundle/
@@ -43,7 +47,7 @@ endif
 try
   set t_Co=256 " Enable 256 colors
   set background=dark
-  colorscheme xoria256
+  " colorscheme xoria256
 catch
 endtry
 
