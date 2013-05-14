@@ -20,7 +20,20 @@ Bundle 'ctrlp.vim'
 Bundle 'xoria256.vim'
 
 " fugitive: a Git wrapper so awesome, it should be illegal.
-Bundle 'fugitive.vim'
+" Bundle 'fugitive.vim'
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'wesleyche/Trinity'
+
+" A parser for a condensed HTML format
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Vim-script library
+Bundle 'L9'
+
+Bundle 'taglist.vim'
+
+Bundle 'wesleyche/SrcExpl'
 
 " pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
 Bundle 'pyflakes'
