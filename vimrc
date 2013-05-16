@@ -4,7 +4,7 @@
 
 set nocompatible " Be iMproved
 
-set number
+" set number
 set wrap
 set backspace=indent,eol,start
 " set tabstop=4
@@ -19,7 +19,7 @@ set smartcase
 set ruler
 set history=1000
 set nobackup
-set cursorline
+" set cursorline
 set ff=unix
 set encoding=utf-8
 set fileencoding=utf-8
@@ -119,6 +119,6 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " Trinity
-" Open and close all the three plugins on the same time 
+" Open and close all the three plugins on the same time
 nmap <F8>  :TrinityToggleAll<CR>
 " End Trinity
