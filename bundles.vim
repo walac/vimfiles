@@ -4,7 +4,7 @@ Bundle 'gmarik/vundle'
 
 Bundle "The-NERD-tree"
 
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 Bundle 'Syntastic' " uber awesome syntax and errors highlighter
 
