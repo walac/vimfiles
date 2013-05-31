@@ -121,4 +121,7 @@ endif
 " Trinity
 " Open and close all the three plugins on the same time
 nmap <F8>  :TrinityToggleAll<CR>
+
+" // Set "<F7>" key for updating the tags file artificially                   "
+let g:SrcExpl_updateTagsKey = "<F7>"
 " End Trinity
