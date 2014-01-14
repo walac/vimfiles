@@ -10,7 +10,7 @@ Bundle 'Syntastic' " uber awesome syntax and errors highlighter
 
 Bundle 'a.vim'
 
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Bundle 'benmills/vimux'
 
