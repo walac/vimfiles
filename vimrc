@@ -2,6 +2,10 @@
 " Rodrigo Delduca
 " -- http://nullonerror.org
 
+if filereadable(expand("/etc/vim/vimrc"))
+  source /etc/vim/vimrc
+endif
+
 set nocompatible " Be iMproved
 
 " set number
@@ -116,10 +120,6 @@ autocmd BufWritePost .vimrc source %
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
-endif
-
-if filereadable(expand("/etc/vim/vimrc"))
-  source /etc/vim/vimrc
 endif
 
 " Trinity
