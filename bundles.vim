@@ -62,3 +62,5 @@ Bundle 'ap/vim-css-color'
 " Rainbow Parentheses
 Bundle 'Rainbow-Parentheses-Improved-and2'
 
+" Mercurial Wrapper
+Bundle 'phleet/vim-mercenary'
