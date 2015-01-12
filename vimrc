@@ -152,3 +152,8 @@ nmap <F8>  :TrinityToggleAll<CR>
 " // Set "<F7>" key for updating the tags file artificially                   "
 let g:SrcExpl_updateTagsKey = "<F7>"
 " End Trinity
+
+let g:ycm_show_diagnostics_ui = 0
+
+ au BufRead,BufNewFile *.jsm set filetype=javascript
+ au BufRead,BufNewFile *.md set filetype=markdown
