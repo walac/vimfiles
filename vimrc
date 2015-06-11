@@ -52,9 +52,16 @@ set encoding=utf-8
 set fileencoding=utf-8
 set autoread
 
-set sts=4
+set sts=0
+set ts=4
 set sw=4
 set expandtab
+set pi
+set ci
+set cin
+set smartindent
+set smarttab
+set autoindent
 
 " Enable syntax highlighting
 syntax on
