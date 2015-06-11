@@ -64,3 +64,6 @@ Bundle 'Rainbow-Parentheses-Improved-and2'
 
 " Mercurial Wrapper
 Bundle 'phleet/vim-mercenary'
+
+" HTML development
+Plugin 'mattn/emmet-vim'
