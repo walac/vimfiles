@@ -66,3 +66,6 @@ Plugin 'phleet/vim-mercenary'
 
 " HTML development
 Plugin 'mattn/emmet-vim'
+
+" Puppet
+Plugin 'rodjek/vim-puppet'
