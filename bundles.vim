@@ -69,3 +69,6 @@ Plugin 'mattn/emmet-vim'
 
 " Puppet
 Plugin 'rodjek/vim-puppet'
+
+" Go lang
+Plugin 'fatih/vim-go'
