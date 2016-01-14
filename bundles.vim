@@ -72,3 +72,6 @@ Plugin 'rodjek/vim-puppet'
 
 " Go lang
 Plugin 'fatih/vim-go'
+
+" Rust lanf
+Plugin 'rust-lang/rust.vim'
