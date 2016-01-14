@@ -1,69 +1,68 @@
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle "The-NERD-tree"
+Plugin "The-NERD-tree"
 
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
-Bundle 'Syntastic' " uber awesome syntax and errors highlighter
+Plugin 'Syntastic' " uber awesome syntax and errors highlighter
 
-Bundle 'a.vim'
+Plugin 'a.vim'
 
-"Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
-Bundle 'benmills/vimux'
+Plugin 'benmills/vimux'
 
 " CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-Bundle 'ctrlp.vim'
+Plugin 'ctrlp.vim'
 
-Bundle 'xoria256.vim'
+Plugin 'xoria256.vim'
 
 " fugitive: a Git wrapper so awesome, it should be illegal.
-" Bundle 'fugitive.vim'
-Bundle 'tpope/vim-fugitive'
+" Plugin 'fugitive.vim'
+Plugin 'tpope/vim-fugitive'
 
-Bundle 'wesleyche/Trinity'
+Plugin 'wesleyche/Trinity'
 
 " A parser for a condensed HTML format
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Vim-script library
-Bundle 'L9'
+Plugin 'L9'
 
-Bundle 'taglist.vim'
+Plugin 'taglist.vim'
 
-Bundle 'wesleyche/SrcExpl'
+Plugin 'wesleyche/SrcExpl'
 
 " pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
-Bundle 'pyflakes'
+Plugin 'pyflakes'
 
 " Qt syntax highlighting
-Bundle 'Qt.vim'
+Plugin 'Qt.vim'
 
 " Vimplate http://www.vim.org/scripts/script.php?script_id=1311
-" Bundle 'vimplate'
+" Plugin 'vimplate'
 
 " The Matrix screensaver
-Bundle 'matrix.vim'
+Plugin 'matrix.vim'
 
 " CSS color highlighting
-Bundle 'ap/vim-css-color'
+Plugin 'ap/vim-css-color'
 
 " Retro groove color scheme for Vim
-Bundle 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 
 " Tagbar displays the tags of the current file in a sidebar
-Bundle 'Tagbar'
+Plugin 'Tagbar'
 
 " CSS color highlighting
-Bundle 'ap/vim-css-color'
+Plugin 'ap/vim-css-color'
 
 " Rainbow Parentheses
-Bundle 'Rainbow-Parentheses-Improved-and2'
+Plugin 'Rainbow-Parentheses-Improved-and2'
 
 " Mercurial Wrapper
-Bundle 'phleet/vim-mercenary'
+Plugin 'phleet/vim-mercenary'
 
 " HTML development
 Plugin 'mattn/emmet-vim'

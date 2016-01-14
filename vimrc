@@ -63,6 +63,9 @@ set smartindent
 set smarttab
 set autoindent
 
+" Vi improved
+set nocompatible
+
 " Enable syntax highlighting
 syntax on
 
@@ -70,13 +73,18 @@ syntax on
 " set noerrorbells
 set novisualbell
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" Vundle required ¯\_(ツ)_/¯
+filetype off 
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 let file = expand("~/.vim/bundles.vim")
 if filereadable(file)
   silent! execute 'source '.file
 endif
+
+call vundle#end() 
 
 try
   " set t_Co=256 " Enable 256 colors
