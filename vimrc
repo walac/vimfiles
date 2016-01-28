@@ -174,6 +174,7 @@ let g:ycm_show_diagnostics_ui = 0
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set statusline+=%F\ %y\ %l,%v\ %c\ %R
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
