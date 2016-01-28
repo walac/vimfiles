@@ -5,8 +5,6 @@ Plugin "The-NERD-tree"
 
 Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'Syntastic' " uber awesome syntax and errors highlighter
-
 Plugin 'a.vim'
 
 "Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
@@ -55,9 +53,6 @@ Plugin 'morhetz/gruvbox'
 " Tagbar displays the tags of the current file in a sidebar
 Plugin 'Tagbar'
 
-" CSS color highlighting
-Plugin 'ap/vim-css-color'
-
 " Rainbow Parentheses
 Plugin 'Rainbow-Parentheses-Improved-and2'
 
@@ -75,3 +70,15 @@ Plugin 'fatih/vim-go'
 
 " Rust lanf
 Plugin 'rust-lang/rust.vim'
+
+" Nodejs
+Plugin 'moll/vim-node'
+
+" Syntastic
+Plugin 'scrooloose/syntastic'
+
+"Tern
+Plugin 'ternjs/tern_for_vim'
+
+" Javascript syntax
+Plugin 'jelera/vim-javascript-syntax'
