@@ -82,3 +82,6 @@ Plugin 'ternjs/tern_for_vim'
 
 " Javascript syntax
 Plugin 'jelera/vim-javascript-syntax'
+
+" Coffeescript
+Plugin 'kchmck/vim-coffee-script'
