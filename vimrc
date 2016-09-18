@@ -180,6 +180,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
@@ -191,4 +193,5 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_goimports_bin = 'goimports'
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+let g:syntastic_go_gometalinter_args = "--disable-all --enable=gotype --enable=golint --enable=deadcode --enable=staticcheck --enable=deadcode --enable=misspell --enable=vet --enable=vetshadow --enable=gosimple"
+let g:syntastic_go_checkers = ['gometalinter']
