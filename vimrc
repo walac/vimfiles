@@ -87,7 +87,7 @@ endif
 call vundle#end() 
 
 try
-  " set t_Co=256 " Enable 256 colors
+  set t_Co=256 " Enable 256 colors
   set background=dark
   " colorscheme xoria256
 catch
