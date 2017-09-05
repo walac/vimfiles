@@ -94,3 +94,6 @@ Plugin 'PProvost/vim-ps1'
 
 " jq syntax highlight
 Plugin 'vito-c/jq.vim'
+
+" EditorConfig plugin. http://editorconfig.org/
+Plugin 'editorconfig/editorconfig-vim'
