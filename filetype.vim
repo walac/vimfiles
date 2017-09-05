@@ -2,6 +2,7 @@ autocmd FileType python set sts=4|set tabstop=4|set shiftwidth=4|set expandtab|s
 autocmd FileType c set tabstop=4|set shiftwidth=4|set expandtab|set smarttab
 autocmd FileType cpp set tabstop=4|set shiftwidth=4|set expandtab|set smarttab
 autocmd FileType html,javascript,css,markdown,json,coffee set tabstop=2|set shiftwidth=2|set expandtab|set smarttab
+autocmd FileType jq,json set tabstop=2|set shiftwidth=2|set expandtab|set smarttab
 autocmd FileType yaml set tabstop=2|set shiftwidth=2|set expandtab|set sts=2|set smarttab
 autocmd FileType tex set tabstop=2|set shiftwidth=2|set expandtab|set sts=2|set smarttab
 autocmd FileType dtrace set tabstop=4|set shiftwidth=4|set expandtab|set sts=4|set smarttab

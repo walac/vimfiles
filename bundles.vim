@@ -91,3 +91,6 @@ Plugin 'zig-lang/zig.vim'
 
 " PowerShell plugin
 Plugin 'PProvost/vim-ps1'
+
+" jq syntax highlight
+Plugin 'vito-c/jq.vim'
