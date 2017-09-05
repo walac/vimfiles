@@ -88,3 +88,6 @@ Plugin 'kchmck/vim-coffee-script'
 
 " Zig
 Plugin 'zig-lang/zig.vim'
+
+" PowerShell plugin
+Plugin 'PProvost/vim-ps1'
