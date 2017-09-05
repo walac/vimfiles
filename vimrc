@@ -193,5 +193,19 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_goimports_bin = 'goimports'
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_gometalinter_args = "--vendor --disable-all --enable=gotype --enable=golint --enable=deadcode --enable=staticcheck --enable=deadcode --enable=misspell --enable=vet --enable=vetshadow --enable=gosimple"
+let g:syntastic_go_gometalinter_args = '--vendor
+    \ --disable-all
+    \ --enable=deadcode
+    \ --enable=gas
+    \ --enable=gotype
+    \ --enable=golint
+    \ --enable=deadcode
+    \ --enable=staticcheck
+    \ --enable=deadcode
+    \ --enable=misspell
+    \ --enable=vet
+    \ --enable=vetshadow
+    \ --enable=ineffassign
+    \ --enable=goconst
+    \ --enable=gosimple'
 let g:syntastic_go_checkers = ['gometalinter']
