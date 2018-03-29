@@ -85,3 +85,6 @@ Plugin 'jelera/vim-javascript-syntax'
 
 " Coffeescript
 Plugin 'kchmck/vim-coffee-script'
+
+" Zig
+Plugin 'zig-lang/zig.vim'
