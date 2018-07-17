@@ -97,3 +97,6 @@ Plugin 'vito-c/jq.vim'
 
 " EditorConfig plugin. http://editorconfig.org/
 Plugin 'editorconfig/editorconfig-vim'
+
+" Terraform integration
+Plugin 'hashivim/vim-terraform'
