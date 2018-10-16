@@ -100,3 +100,6 @@ Plugin 'editorconfig/editorconfig-vim'
 
 " Terraform integration
 Plugin 'hashivim/vim-terraform'
+
+" Go completer
+Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
