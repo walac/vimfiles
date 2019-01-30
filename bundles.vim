@@ -103,3 +103,6 @@ Plugin 'hashivim/vim-terraform'
 
 " Go completer
 Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
+
+" SystemTap
+Plugin 'nickhutchinson/vim-systemtap'
