@@ -52,3 +52,5 @@ Plugin 'hashivim/vim-terraform'
 " Go completer
 Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
 
+" SystemTap
+Plugin 'schnell18/vim-stap'
