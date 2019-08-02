@@ -194,14 +194,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_goimports_bin = 'goimports'
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_gometalinter_args = '
-    \ --vendor
-    \ --disable-all
-    \ --enable=deadcode
-    \ --enable=ineffassign
-    \ --enable=vet
-    \ --enable=vetshadow
-    \ --enable=misspell
-    \ --enable=golint
-    \ --exclude="\bexported \w+ (\S*[''.]*)([a-zA-Z''.*]*) should have comment.*or be unexported\b"'
+"let g:syntastic_go_gometalinter_args = 'run --fast'
 let g:syntastic_go_checkers = ['gometalinter']
+let g:go_metalinter_command = "golangci-lint"

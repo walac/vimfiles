@@ -23,7 +23,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'pyflakes'
 
 " Go lang
-Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Rust lanf
 Plugin 'rust-lang/rust.vim'
@@ -48,9 +48,6 @@ Plugin 'editorconfig/editorconfig-vim'
 
 " Terraform integration
 Plugin 'hashivim/vim-terraform'
-
-" Go completer
-Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
 
 " SystemTap
 Plugin 'schnell18/vim-stap'
