@@ -51,3 +51,6 @@ Plugin 'hashivim/vim-terraform'
 
 " SystemTap
 Plugin 'schnell18/vim-stap'
+
+" crystal-lang
+Plugin 'rhysd/vim-crystal'

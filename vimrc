@@ -179,8 +179,12 @@ set statusline+=%F\ %y\ %l,%v\ %c\ %R
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_javascript_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_check_on_wq = 0
+let g:syntastic_check_on_w = 0
+let g:syntastic_javascript_check_on_w = 1
 let g:syntastic_aggregate_errors = 1
 
 let g:syntastic_javascript_checkers = ['eslint']
@@ -194,6 +198,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_goimports_bin = 'goimports'
 let g:go_fmt_command = "goimports"
-let g:syntastic_go_golangci_lint_args = '--disable-all -E errcheck -E staticcheck -E typecheck'
+let g:syntastic_go_golangci_lint_args = '--disable-all -E errcheck -E staticcheck -E typecheck -E misspell'
 let g:syntastic_go_checkers = ['golangci_lint']
 let g:go_metalinter_command = "golangci-lint"
+
+let g:rustfmt_autosave = 1
