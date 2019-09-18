@@ -203,3 +203,7 @@ let g:syntastic_go_checkers = ['golangci_lint']
 let g:go_metalinter_command = "golangci-lint"
 
 let g:rustfmt_autosave = 1
+
+" YCM completer
+map <C-e> :YcmCompleter GoToDefinition<CR>
+map <C-d> :YcmCompleter GoToDeclaration<CR>
