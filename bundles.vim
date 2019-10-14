@@ -54,3 +54,6 @@ Plugin 'schnell18/vim-stap'
 
 " crystal-lang
 Plugin 'rhysd/vim-crystal'
+
+" clif files
+Plugin 'CraneStation/cranelift.vim'
