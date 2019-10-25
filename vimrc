@@ -202,6 +202,16 @@ let g:syntastic_go_golangci_lint_args = '--disable-all -E errcheck -E staticchec
 let g:syntastic_go_checkers = ['golangci_lint']
 let g:go_metalinter_command = "golangci-lint"
 
+function Py2()
+  let g:syntastic_python_python_exec = 'python2'
+endfunction
+
+function Py3()
+  let g:syntastic_python_python_exec = 'python3'
+endfunction
+
+call Py3()   " default to Py3 because I try to use it when possible
+
 let g:rustfmt_autosave = 1
 
 " YCM completer

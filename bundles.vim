@@ -57,3 +57,6 @@ Plugin 'rhysd/vim-crystal'
 
 " clif files
 Plugin 'CraneStation/cranelift.vim'
+
+" jinja2
+Plugin 'Glench/Vim-Jinja2-Syntax'
