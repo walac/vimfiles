@@ -202,6 +202,12 @@ let g:syntastic_go_golangci_lint_args = '--disable-all -E errcheck -E staticchec
 let g:syntastic_go_checkers = ['golangci_lint']
 let g:go_metalinter_command = "golangci-lint"
 
+let g:rust_cargo_check_all_targets=1
+let g:rust_cargo_check_tests=1
+let g:rust_cargo_check_examples=1
+let g:rust_cargo_check_benches=1
+let g:rustfmt_autosave = 1
+
 function Py2()
   let g:syntastic_python_python_exec = 'python2'
 endfunction
