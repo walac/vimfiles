@@ -105,6 +105,9 @@ map <C-l> <C-W>l
 map <C-Tab> :tabnext<CR>
 map <S-Tab> :tabprevious<CR>
 
+" alternate visual block for use in WSL
+map <space>v <C-V>
+
 " Highlight whitespace
 " highlight ExtraWhitespace ctermbg=red guibg=red
 " match ExtraWhitespace /\s\+$/
