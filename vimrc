@@ -25,8 +25,8 @@ set showmatch		" Show matching brackets.
 "set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 "set incsearch		" Incremental search
-"set autowrite		" Automatically save before commands like :next and :make
-"set hidden		" Hide buffers when they are abandoned
+set autowrite		" Automatically save before commands like :next and :make
+set hidden		" Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 
 set nocompatible " Be iMproved
@@ -102,8 +102,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Tab navigation
-map <C-Tab> :tabnext<CR>
-map <S-Tab> :tabprevious<CR>
+" map <C-Tab> :tabnext<CR>
+" map <S-Tab> :tabprevious<CR>
 
 " alternate visual block for use in WSL
 map <space>v <C-V>
@@ -119,11 +119,6 @@ map <space>v <C-V>
 " Automatically removing all trailing whitespace
 " autocmd BufWritePre * :%s/\s\+$//e
 
-" NERDTree
-" Close Vim if the only window left open is a NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-noremap <C-Left> :NERDTreeToggle<CR>
-
 if has('gui_running')
   " gVim settings
   set guioptions-=T     " Remove the toolbar
@@ -135,14 +130,6 @@ let g:Powerline_symbols = 'unicode'
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set fillchars+=stl:\ ,stlnc:\
-
-" YCM Setup
-" Stolen from Oblita https://gist.github.com/oblitum/5565974
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_key_list_previous_completion=['<Up>']
-let g:ycm_use_clangd = 0
 
 " Tagbar
 let g:tagbar_autoclose = 1
@@ -223,22 +210,44 @@ call Py3()   " default to Py3 because I try to use it when possible
 
 let g:rustfmt_autosave = 1
 
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 " coc completer
-" nmap <silent> <C-d> <Plug>(coc-definition)
-" nmap <nmap> <C-e> <Plug>(coc-implementation)
-map <C-e> :YcmCompleter GoToDefinition<CR>
-map <C-d> :YcmCompleter GoToReferences<CR>
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
 " <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
-" if exists('*complete_info')
-"   inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-" else
-"   inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" endif
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -339,4 +348,4 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Map for coc-exploer
-nnoremap <space>e :CocCommand explorer<cr>
+nnoremap <C-E> :CocCommand explorer<cr>

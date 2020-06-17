@@ -1,8 +1,6 @@
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plugin 'a.vim'
