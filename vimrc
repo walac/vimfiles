@@ -177,6 +177,9 @@ let g:syntastic_check_on_w = 0
 let g:syntastic_javascript_check_on_w = 1
 let g:syntastic_aggregate_errors = 1
 
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++17 -stdlib=libc++'
+
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
