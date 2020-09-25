@@ -63,3 +63,6 @@ Plugin 'Glench/Vim-Jinja2-Syntax'
 
 " Semantic syntax highlighting
 Plugin 'jackguo380/vim-lsp-cxx-highlight'
+
+" GLSL support
+Plugin 'tikhomirov/vim-glsl'
