@@ -66,3 +66,6 @@ Plugin 'jackguo380/vim-lsp-cxx-highlight'
 
 " GLSL support
 Plugin 'tikhomirov/vim-glsl'
+
+" Sourcetrail
+Plugin 'CoatiSoftware/vim-sourcetrail'

@@ -239,6 +239,11 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Sourcetrail plugin
+nnoremap <leader>as :SourcetrailRefresh<CR>
+nnoremap <leader>aa :SourcetrailActivateToken<CR>
+let g:sourcetrail_autostart = 0
+
 " coc completer
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()

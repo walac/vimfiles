@@ -4,6 +4,10 @@
     "-std=c++17"
   ],
   "clangd.arguments": [
+    "--log=error",
+    "--header-insertion=iwyu",
+    "--completion-style=detailed",
+    "--background-index",
     "--clang-tidy"
   ],
   "clangd.semanticHighlighting": true
