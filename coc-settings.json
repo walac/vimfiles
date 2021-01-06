@@ -1,5 +1,9 @@
 {
   "go.enable": true,
+  "python.linting.pylintArgs": [
+    "-d",
+    "C0112,C0403,C0115,C0116,C0114,C0402,C0103"
+  ],
   "clangd.fallbackFlags": [
     "-std=c++17"
   ],
