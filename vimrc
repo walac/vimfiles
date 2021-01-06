@@ -211,6 +211,8 @@ endfunction
 
 call Py3()   " default to Py3 because I try to use it when possible
 
+let g:syntastic_python_checkers = []
+
 let g:rustfmt_autosave = 1
 
 " Don't pass messages to |ins-completion-menu|.
