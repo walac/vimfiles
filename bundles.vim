@@ -19,9 +19,6 @@ Plugin 'tpope/vim-fugitive'
 " A parser for a condensed HTML format
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-" pyflakes: highlights common Python errors like misspelling a variable name on the fly. It also warns about unused imports, redefined functions, etc.
-Plugin 'pyflakes'
-
 " Go lang
 Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
