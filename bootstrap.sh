@@ -25,7 +25,7 @@ if which pip3; then
     pip3 install jedi
 elif which pip; then
     pip install jedi
-elif
+fi
 
 cd $WORK/vimfiles/bundle/tern_for_vim/
 npm install
