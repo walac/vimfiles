@@ -11,7 +11,7 @@ vim -c ":CocInstall \
     coc-cmake \
     coc-explorer \
     coc-python \
-    coc-rls \
+    coc-rust-analyzer \
     coc-yaml \
     coc-clangd \
     coc-tsserver \
