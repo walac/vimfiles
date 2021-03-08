@@ -15,8 +15,7 @@ vim -c ":CocInstall \
     coc-yaml \
     coc-clangd \
     coc-tsserver \
-    coc-go \
-    coc-word \
+    coc-go
     " # -c :qall
 
 vim -c :GoInstallBinaries -c :qall
