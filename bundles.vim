@@ -37,3 +37,6 @@ Plugin 'tikhomirov/vim-glsl'
 
 " Sourcetrail
 Plugin 'CoatiSoftware/vim-sourcetrail'
+
+" bpftrace
+Plugin 'mmarchini/bpftrace.vim'
