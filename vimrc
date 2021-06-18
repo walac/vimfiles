@@ -293,3 +293,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Map for coc-exploer
 nnoremap <C-E> :CocCommand explorer<cr>
+
+" Mouse
+nmap <leader>i :set mouse=i<CR>
+nmap <leader>a :set mouse=a<CR>
