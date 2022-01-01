@@ -27,7 +27,7 @@ set smartcase		" Do smart case matching
 "set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 set hidden		" Hide buffers when they are abandoned
-set mouse=a		" Enable mouse usage (all modes)
+set mouse=i		" Enable mouse usage (input mode)
 
 set nocompatible " Be iMproved
 
@@ -294,6 +294,3 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Map for coc-exploer
 nnoremap <C-E> :CocCommand explorer<cr>
 
-" Mouse
-nmap <leader>i :set mouse=i<CR>
-nmap <leader>a :set mouse=a<CR>
