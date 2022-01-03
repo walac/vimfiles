@@ -21,9 +21,9 @@ vim -c ":CocInstall \
 vim -c :GoInstallBinaries -c :qall
 
 if which pip3; then
-    pip3 install --user jedi
+    pip3 install --user pyright jedi yapf
 elif which pip; then
-    pip install --user jedi
+    pip install --user pyright jedi yapf
 fi
 
 cd $WORK/vimfiles/bundle/tern_for_vim/

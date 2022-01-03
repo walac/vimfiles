@@ -40,3 +40,11 @@ Plugin 'CoatiSoftware/vim-sourcetrail'
 
 " bpftrace
 Plugin 'mmarchini/bpftrace.vim'
+
+" Add maktaba and codefmt to the runtimepath.
+" (The latter must be installed before it can be used.)
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plugin 'google/vim-glaive'

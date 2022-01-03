@@ -14,5 +14,6 @@
     "--background-index",
     "--clang-tidy"
   ],
-  "clangd.semanticHighlighting": true
+  "clangd.semanticHighlighting": true,
+  "python.formatting.provider": "yapf"
 }
