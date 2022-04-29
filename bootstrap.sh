@@ -10,7 +10,7 @@ vim -c ":CocInstall \
     coc-json \
     coc-cmake \
     coc-explorer \
-    coc-python \
+    coc-pyright \
     coc-rust-analyzer \
     coc-yaml \
     coc-clangd \
