@@ -4,6 +4,10 @@
 
 vim -c :BundleInstall -c :qall
 
+pushd $WORK/vimfiles/bundle/coc.nvim/
+yarn install --frozen-lockfile
+popd
+
 # XXX: How to wait for CocInstall to finish before quitting?
 vim -c ":CocInstall \
     coc-marketplace \
@@ -26,6 +30,6 @@ elif which pip; then
     pip install --user pyright jedi yapf
 fi
 
-cd $WORK/vimfiles/bundle/tern_for_vim/
-npm install
-cd -
+pushd $WORK/vimfiles/bundle/tern_for_vim/
+npm install --frozen-lockfile
+popd
