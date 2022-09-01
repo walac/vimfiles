@@ -74,17 +74,15 @@ syntax on
 set novisualbell
 
 " Vundle required ¯\_(ツ)_/¯
-filetype off 
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
 let file = expand("~/.vim/bundles.vim")
 if filereadable(file)
   silent! execute 'source '.file
 endif
 
-call vundle#end() 
+call plug#end()
 
 try
   set t_Co=256 " Enable 256 colors
@@ -153,7 +151,7 @@ endif
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+"set updatetime=300
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
