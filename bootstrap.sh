@@ -24,7 +24,7 @@ vim +":CocInstall \
     " #+qall
 
 if which pip3; then
-    pip3 install --user pyright jedi yapf
+    pip3 install --user pyright jedi black
 elif which pip; then
-    pip install --user pyright jedi yapf
+    pip install --user pyright jedi black
 fi
