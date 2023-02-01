@@ -42,3 +42,6 @@ Plug 'google/vim-glaive'
 
 " Jinja2
 Plug "lepture/vim-jinja"
+
+" Linux Kernel coding style
+Plug 'gregkh/kernel-coding-style'
