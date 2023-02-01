@@ -20,7 +20,9 @@ vim +":CocInstall \
     coc-ltex \
     coc-webview \
     coc-markdownlint \
-    coc-markdown-preview-enchanced
+    coc-markdown-preview-enchanced \
+    coc-vimlsp \
+    coc-pydocstring \
     " #+qall
 
 if which pip3; then

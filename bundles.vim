@@ -1,11 +1,9 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'a.vim'
-
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
-Plug 'ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " fugitive: a Git wrapper so awesome, it should be illegal.
 " Plug 'fugitive.vim'
@@ -41,7 +39,7 @@ Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
 " Jinja2
-Plug "lepture/vim-jinja"
+Plug 'lepture/vim-jinja'
 
 " Linux Kernel coding style
 Plug 'gregkh/kernel-coding-style'
