@@ -302,6 +302,16 @@ call glaive#Install()
 Glaive codefmt plugin[mappings]
 Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
 
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|o|.ko)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
 augroup autoformat_settings
   "autocmd FileType bzl AutoFormatBuffer buildifier
   "autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
