@@ -100,8 +100,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Tab navigation
-" map <C-Tab> :tabnext<CR>
-" map <S-Tab> :tabprevious<CR>
+map <C-n> :tabnext<CR>
+map <C-N> :tabprevious<CR>
 
 " alternate visual block for use in WSL
 map <space>v <C-V>
