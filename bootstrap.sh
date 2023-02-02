@@ -23,6 +23,7 @@ vim +":CocInstall \
     coc-markdown-preview-enchanced \
     coc-vimlsp \
     coc-pydocstring \
+    coc-tag \
     " #+qall
 
 if which pip3; then
