@@ -73,8 +73,6 @@ syntax on
 " set noerrorbells
 set novisualbell
 
-" Vundle required ¯\_(ツ)_/¯
-
 call plug#begin()
 
 let file = expand("~/.vim/bundles.vim")
@@ -157,6 +155,9 @@ endif
 " diagnostics appear/become resolved.
 set signcolumn=yes
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" coc.nvim configs
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: There's always complete item selected by default, you may want to enable
 " no select by `"suggest.noselect": true` in your configuration file.
@@ -166,7 +167,7 @@ inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<S-TAB>"
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice.
@@ -302,7 +303,9 @@ call glaive#Install()
 Glaive codefmt plugin[mappings]
 Glaive codefmt google_java_executable="java -jar /path/to/google-java-format-VERSION-all-deps.jar"
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -311,6 +314,20 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|o|.ko)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GNU Global
+
+if has("cscope")
+    let GtagsCscope_Auto_Load = 1
+    let GtagsCscope_Auto_Map = 1
+    let GtagsCscope_Quiet = 1
+endif
+
+set csprg=gtags-cscope
+" cs add GTAGS
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup autoformat_settings
   "autocmd FileType bzl AutoFormatBuffer buildifier
