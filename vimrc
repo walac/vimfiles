@@ -328,7 +328,17 @@ set csprg=gtags-cscope
 " cs add GTAGS
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-grammarous
 
+" vim-grammarous doesn't work with LanguageTool 6.0 because it doesn't support
+" the --api parameter anymore.
+let g:grammarous#jar_url = 'https://www.languagetool.org/download/LanguageTool-5.9.zip'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto-close
+let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.vue,*.phtml,*.js,*.jsx,*.coffee,*.erb'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup autoformat_settings
   "autocmd FileType bzl AutoFormatBuffer buildifier
   "autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
