@@ -13,3 +13,4 @@ autocmd BufNewFile,BufRead *.template set filetype=html " nullonerror templates
 au BufRead,BufNewFile *.jsm set filetype=javascript
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufNewFile,BufRead *.j2 set ft=jinja
+au BufNewFile,BufRead */mutt/*.muttrc set ft=neomuttrc
