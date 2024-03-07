@@ -12,6 +12,7 @@
     "--header-insertion=iwyu",
     "--completion-style=detailed",
     "--background-index",
+    "--header-insertion=never",
     "--clang-tidy"
   ],
   "python.formatting.provider": "yapf"
