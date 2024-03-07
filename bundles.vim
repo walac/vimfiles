@@ -52,3 +52,6 @@ Plug 'LunarWatcher/auto-pairs'
 
 " closing XML tags
 Plug 'alvan/vim-closetag'
+
+" NERD Tree
+Plug 'preservim/nerdtree'

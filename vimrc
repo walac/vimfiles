@@ -352,3 +352,10 @@ augroup autoformat_settings
   autocmd FileType rust AutoFormatBuffer rustfmt
   "autocmd FileType vue AutoFormatBuffer prettier
 augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
