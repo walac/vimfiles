@@ -48,7 +48,7 @@ Plug 'gregkh/kernel-coding-style'
 Plug 'rhysd/vim-grammarous'
 
 " Auto close brackets and brackets
-Plug 'jiangmiao/auto-pairs'
+Plug 'LunarWatcher/auto-pairs'
 
 " closing XML tags
 Plug 'alvan/vim-closetag'
