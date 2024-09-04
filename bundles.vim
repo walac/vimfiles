@@ -55,3 +55,6 @@ Plug 'alvan/vim-closetag'
 
 " NERD Tree
 Plug 'preservim/nerdtree'
+
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim'
