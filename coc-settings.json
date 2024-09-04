@@ -15,5 +15,10 @@
     "--header-insertion=never",
     "--clang-tidy"
   ],
-  "python.formatting.provider": "yapf"
+  "python.formatting.provider": "yapf",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.indexing": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "workspace"
 }
