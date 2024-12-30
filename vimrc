@@ -324,6 +324,7 @@ if has("cscope")
     let GtagsCscope_Quiet = 1
 endif
 
+set cscopetag
 set csprg=gtags-cscope
 " cs add GTAGS
 
