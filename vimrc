@@ -127,11 +127,6 @@ set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 set fillchars+=stl:\ ,stlnc:\
 
-" Tagbar
-let g:tagbar_autoclose = 1
-let g:tagbar_autofocus = 1
-noremap <C-Right> :TagbarToggle<CR>
-
 " Rainbow Parentheses
 let g:rainbow_operators = 1
 let g:rainbow_active = 1
