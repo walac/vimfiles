@@ -358,3 +358,9 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 
 " To make editconfig work with the Fugitive plugin
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" Window resize
+map <C-Right> 1<C-w>>
+map <C-Left> 1<C-w><
+map <C-Up> 1<C-w>+
+map <C-Down> 1<C-w>-
