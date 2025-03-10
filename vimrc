@@ -364,3 +364,6 @@ map <C-Right> 1<C-w>>
 map <C-Left> 1<C-w><
 map <C-Up> 1<C-w>+
 map <C-Down> 1<C-w>-
+
+" autopais
+let g:AutoPairsCompleteOnlyOnSpace = 1
