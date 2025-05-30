@@ -7,6 +7,7 @@ autocmd FileType yaml set tabstop=2|set shiftwidth=2|set expandtab|set sts=2|set
 autocmd BufNewFile,BufRead *.tf set tabstop=2|set shiftwidth=2|set expandtab|set sts=2|set smarttab
 autocmd FileType tex set tabstop=2|set shiftwidth=2|set expandtab|set sts=2|set smarttab
 autocmd FileType dtrace set tabstop=4|set shiftwidth=4|set expandtab|set sts=4|set smarttab
+au BufRead,BufNewFile *.bt set tabstop=2|set shiftwidth=2|set expandtab
 autocmd BufNewFile,BufRead *.eyaml set filetype=yaml
 autocmd BufNewFile,BufRead SCons* set filetype=python
 autocmd BufNewFile,BufRead *.template set filetype=html " nullonerror templates
