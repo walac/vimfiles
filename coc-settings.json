@@ -15,6 +15,10 @@
     "--header-insertion=never",
     "--clang-tidy"
   ],
+  "codeLens.display": true,
+  "coc.preferences.enableLinkedEditing": true,
+  "inlayHint.enable": false,
+  "semanticTokens.enable": true,
   "python.formatting.provider": "yapf",
   "python.analysis.autoSearchPaths": true,
   "python.analysis.useLibraryCodeForTypes": true,
