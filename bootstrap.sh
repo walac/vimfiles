@@ -15,7 +15,6 @@ vim +":CocInstall \
     coc-yaml \
     coc-clangd \
     coc-tsserver \
-    coc-go \
     coc-toml \
     coc-ltex \
     coc-webview \
