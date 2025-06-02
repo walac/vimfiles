@@ -27,4 +27,4 @@ vim +":CocInstall \
     @yaegassy/coc-ruff \
     " #+qall
 
-uv tool install pyright jedi black
+uv tool install pyright jedi black ruff
