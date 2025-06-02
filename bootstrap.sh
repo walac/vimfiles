@@ -23,6 +23,7 @@ vim +":CocInstall \
     coc-vimlsp \
     coc-pydocstring \
     coc-tag \
+    @yaegassy/coc-ruff \
     " #+qall
 
 if which pip3; then
