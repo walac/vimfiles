@@ -27,8 +27,4 @@ vim +":CocInstall \
     @yaegassy/coc-ruff \
     " #+qall
 
-if which pip3; then
-    pip3 install --user pyright jedi black
-elif which pip; then
-    pip install --user pyright jedi black
-fi
+uv tool install pyright jedi black
