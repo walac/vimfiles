@@ -367,3 +367,30 @@ map <C-Down> 1<C-w>-
 
 " autopais
 let g:AutoPairsCompleteOnlyOnSpace = 1
+
+" Vim shortcut to open the current kernel source code line in Elixir
+" Requires 'browse' option to be set (which is usually default).
+nnoremap <leader>el :call OpenElixirURL()<CR>
+
+function! OpenElixirURL()
+    let l:file = expand('%:p')
+    let l:relfile = substitute(l:file, getcwd() . '/', '', '')
+    let l:line = line('.')
+    let l:url = 'https://elixir.bootlin.com/linux/latest/source/' . l:relfile . '\#L' . l:line
+    execute 'silent !xdg-open ' . shellescape(l:url)
+    redraw!
+endfunction
+
+" Vim shortcut to search the symbol definition under the cursor in Elixir
+nnoremap <leader>es :call ElixirSearchSymbol()<CR>
+
+function! ElixirSearchSymbol()
+    let l:symbol = expand('<cword>')
+    if empty(l:symbol)
+        echo "No symbol under cursor"
+        return
+    endif
+    let l:url = 'https://elixir.bootlin.com/linux/latest/ident/' . l:symbol
+    execute 'silent !xdg-open ' . shellescape(l:url)
+    redraw!
+endfunction
