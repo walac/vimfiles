@@ -394,3 +394,6 @@ function! ElixirSearchSymbol()
     execute 'silent !xdg-open ' . shellescape(l:url)
     redraw!
 endfunction
+
+" Add Reviewed-by line
+nnoremap <leader>re :call append(line('.'), ['', 'Reviewed-by: Wander Lairson Costa <wander@redhat.com>'])<CR>
