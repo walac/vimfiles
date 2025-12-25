@@ -1,7 +1,5 @@
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
 " CtrlP: Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 Plug 'ctrlpvim/ctrlp.vim'
 
