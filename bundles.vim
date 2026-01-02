@@ -56,3 +56,12 @@ Plug 'preservim/nerdtree'
 
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
+
+" Line status
+Plug 'itchyny/lightline.vim'
+
+" FZF plugin
+Plug "junegunn/fzf.vim"
+
+" Add and remove brackets from strings
+Plug "tpope/vim-surround"
