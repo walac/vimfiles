@@ -26,5 +26,8 @@
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.indexing": true,
   "python.analysis.autoImportCompletions": true,
-  "python.analysis.diagnosticMode": "workspace"
+  "python.analysis.diagnosticMode": "workspace",
+  "markdownlint.config": {
+    "line-length": false
+  }
 }
