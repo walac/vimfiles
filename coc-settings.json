@@ -29,5 +29,13 @@
   "python.analysis.diagnosticMode": "workspace",
   "markdownlint.config": {
     "line-length": false
+  },
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
   }
 }
