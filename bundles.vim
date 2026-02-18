@@ -42,9 +42,6 @@ Plug 'lepture/vim-jinja'
 " Linux Kernel coding style
 Plug 'gregkh/kernel-coding-style'
 
-" Spell checker
-Plug 'rhysd/vim-grammarous'
-
 " Auto close brackets and brackets
 Plug 'LunarWatcher/auto-pairs'
 
