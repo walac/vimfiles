@@ -20,6 +20,7 @@
   "inlayHint.enable": false,
   "semanticTokens.enable": true,
   "python.formatting.provider": "darker",
+  "python.formatting.darkerArgs": ["-l", "100"],
   "python.linting.ruffEnabled": false,
   "python.analysis.typeCheckingMode": "standard",
   "python.analysis.autoSearchPaths": true,
